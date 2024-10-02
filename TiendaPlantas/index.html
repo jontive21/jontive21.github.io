@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Plantas - Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="articulo.html">Plantas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carousel">
+            <button onclick="anteriorImagen()">Anterior</button>
+            <img id="imagenCarousel" src="img1.jpg" alt="Imagen de Plantas">
+            <button onclick="siguienteImagen()">Siguiente</button>
+        </section>
+
+        <section class="intro">
+            <h1>Bienvenidos a la Tienda de Plantas</h1>
+            <p>Ofrecemos una variedad de plantas y accesorios para el hogar y el jardín.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
