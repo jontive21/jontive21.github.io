@@ -1,47 +1,70 @@
+/* Estilos globales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Arial', sans-serif;  /* Cambia la fuente */
+    background-color: #f0f0f0;  /* Fondo claro para el sitio */
+    color: #333;  /* Texto en color oscuro */
     margin: 0;
     padding: 0;
 }
 
+h1, h2 {
+    color: #2e8b57;  /* Verde más oscuro para los títulos */
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Estilos para el encabezado y el menú de navegación */
 header {
-    background-color: #4CAF50;
+    background-color: #4CAF50;  /* Color verde para el fondo del header */
     padding: 10px 0;
+    display: flex;
+    justify-content: center;  /* Centrar el contenido */
+    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
+    display: flex;  /* Flexbox para organizar los elementos del menú */
+    justify-content: space-around;
+    width: 50%;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px;  /* Espacio entre elementos */
 }
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+/* Estilos para la sección de introducción */
+.intro {
+    display: flex;  /* Flexbox para alinear el contenido */
+    flex-direction: column;  /* Vertical para textos */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;  /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
+/* Estilos para el carrusel */
 .carousel {
-    display: flex;
-    justify-content: center;
+    display: flex;  /* Flexbox para organizar el carrusel */
+    justify-content: center;  /* Centrar el contenido */
     align-items: center;
     margin: 20px 0;
+    gap: 15px;  /* Espacio entre los botones y la imagen */
 }
 
 #imagenCarousel {
     width: 60%;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .carousel button {
@@ -50,26 +73,36 @@ nav ul li a:hover {
     border: none;
     padding: 10px;
     cursor: pointer;
-    margin: 0 10px;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .carousel button:hover {
     background-color: #45a049;
 }
+/* Estilos para los artículos */
 .articulos {
-    display: flex;
+    display: flex;  /* Flexbox para organizar las columnas */
     justify-content: space-around;
+    flex-wrap: wrap;  /* Permitir que se reorganicen en pantallas pequeñas */
     margin: 20px;
+    gap: 20px;  /* Espacio entre columnas */
 }
 
 .columna {
-    background-color: #ffffff;
+    background-color: #ffffff;  /* Fondo blanco para cada columna */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 30%;  /* Cada columna ocupa 30% del ancho */
 }
+
+.columna img {
+    width: 100%;  /* La imagen ocupa el ancho completo */
+    border-radius: 8px;
+    margin-bottom: 10px;  /* Espacio debajo de la imagen */
+}
+/* Estilos para la sección de contacto */
 .contacto {
     display: flex;
     justify-content: center;
@@ -77,6 +110,9 @@ nav ul li a:hover {
 }
 
 form {
+    display: flex;  /* Flexbox para organizar los campos del formulario */
+    flex-direction: column;  /* Colocar los elementos en una columna */
+    align-items: stretch;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -85,13 +121,12 @@ form {
 }
 
 form label {
-    display: block;
-    margin: 10px 0 5px;
+    margin-top: 10px;
 }
 
 form input {
-    width: 100%;
     padding: 8px;
+    margin-top: 5px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -104,8 +139,11 @@ form button {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    align-self: center;  /* Centrar el botón dentro del formulario */
+    transition: background-color 0.3s;
 }
 
 form button:hover {
     background-color: #45a049;
 }
+
