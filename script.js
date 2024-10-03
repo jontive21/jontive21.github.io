@@ -1,4 +1,4 @@
-let imagenes = ['img1.jpg', 'img2.jpg', 'img3.jpg'];
+let imagenes = ['interior.jpg', 'exterior.jpg', 'accesorios.jpg'];
 let indiceActual = 0;
 
 function mostrarImagen() {
