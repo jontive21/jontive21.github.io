@@ -59,10 +59,14 @@ nav ul li {
     align-items: center;
     margin: 20px 0;
     gap: 15px;  /* Espacio entre los botones y la imagen */
+    max-width: 100%; /*limitar el ancho maximo*/
 }
 
 #imagenCarousel {
-    width: 60%;
+    width:100%;
+    max-width: 600px; /*Limitar el ancho de la imagen*/
+    height:auto;
+    max-height: 400px; /*Limitar la altura max de la imagen*/
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
