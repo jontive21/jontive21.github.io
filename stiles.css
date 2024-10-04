@@ -89,9 +89,9 @@ nav ul li {
     display: flex;  /* Flexbox para organizar las columnas */
     justify-content: space-around;
     flex-wrap: wrap;  /* Permitir que se reorganicen en pantallas pequeñas */
-    flex-direction: column;
-    margin: 20px;
-    gap: 20px;  /* Espacio entre columnas */
+    flex-direction: row;
+    margin: 10px;
+    /*gap: 1px;  Espacio entre columnas */
 }
 
 .columna {
@@ -103,7 +103,7 @@ nav ul li {
 }
 
 .columna img {
-    width: 40%;  /* La imagen ocupa el ancho completo */
+    width: 100%;  /* La imagen ocupa el ancho completo */
     border-radius: 8px;
     margin-bottom: 10px;  /* Espacio debajo de la imagen */
 }
