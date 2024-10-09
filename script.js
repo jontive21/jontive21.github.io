@@ -27,10 +27,10 @@ function validarFormulario() {
     if (nombre.length === 0) {
         errores.push('El nombre es obligatorio.');
     }
-    if (!/^([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/.test(email)) {
+    if (!/^([a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.[a-zA-Z.]{2,})$/.test(email)) {
         errores.push('El email no es válido.');
     }
-    if (!/^\d{4}-\d{3}-\d{3}$/.test(telefono)) {
+    if (!/^\d{3}-\d{4}-\d{3}$/.test(telefono)) {
         errores.push('El teléfono no tiene el formato correcto.');
     }
 
