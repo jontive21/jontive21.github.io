@@ -37,17 +37,9 @@ function validarFormulario() {
     let resultado = document.getElementById('resultado');
     resultado.innerHTML = '';
 
-    if (errores.length > 0) {
-        errores.forEach(error => {
-            let p = document.createElement('p');
-            p.textContent = error;
-            resultado.appendChild(p);
-        });
-    } else {
-        let p = document.createElement('p');
-        p.textContent = `Datos enviados: Nombre: ${nombre}, Email: ${email}, Teléfono: ${telefono}`;
-        resultado.appendChild(p);
-    }
+    // Establecer el margen superior (tres líneas debajo del formulario)
+    resultado.style.marginTop = '80px';  // 8 líneas equivalen aproximadamente a 80px
+
     // Mostrar los errores o los datos enviados
     if (errores.length > 0) {
         // Si hay errores, mostrar un recuadro rojo con los errores
@@ -58,7 +50,8 @@ function validarFormulario() {
         divErrores.style.padding = '10px';
         divErrores.style.marginTop = '10px';
         divErrores.style.borderRadius = '5px';
-
+        divErrores.style.marginTop = '20px';  // Asegura espacio con el formulario
+        
         errores.forEach(function(error) {
             let p = document.createElement('p');
             p.textContent = error;
@@ -75,6 +68,7 @@ function validarFormulario() {
         divExito.style.padding = '10px';
         divExito.style.marginTop = '10px';
         divExito.style.borderRadius = '5px';
+        divExito.style.marginTop = '20px';  // Asegura espacio con el formulario
 
         let pExito = document.createElement('p');
         pExito.textContent = `Datos enviados correctamente: 
