@@ -156,4 +156,10 @@ form button:hover {
         flex-direction: column;  /* Cambiar a columnas verticales en pantallas pequeñas */
     }
 }
+/* Estilos para el mensaje de éxito */
+#resultado div {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
 

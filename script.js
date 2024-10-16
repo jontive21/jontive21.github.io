@@ -48,4 +48,39 @@ function validarFormulario() {
         p.textContent = `Datos enviados: Nombre: ${nombre}, Email: ${email}, Teléfono: ${telefono}`;
         resultado.appendChild(p);
     }
+    // Mostrar los errores o los datos enviados
+    if (errores.length > 0) {
+        // Si hay errores, mostrar un recuadro rojo con los errores
+        let divErrores = document.createElement('div');
+        divErrores.style.border = '2px solid red';
+        divErrores.style.backgroundColor = '#f8d7da';
+        divErrores.style.color = '#721c24';
+        divErrores.style.padding = '10px';
+        divErrores.style.marginTop = '10px';
+        divErrores.style.borderRadius = '5px';
+
+        errores.forEach(function(error) {
+            let p = document.createElement('p');
+            p.textContent = error;
+            divErrores.appendChild(p);
+        });
+
+        resultado.appendChild(divErrores);
+    } else {
+        // Si todo está bien, mostrar los datos en un recuadro verde
+        let divExito = document.createElement('div');
+        divExito.style.border = '2px solid green';
+        divExito.style.backgroundColor = '#d4edda';
+        divExito.style.color = '#155724';
+        divExito.style.padding = '10px';
+        divExito.style.marginTop = '10px';
+        divExito.style.borderRadius = '5px';
+
+        let pExito = document.createElement('p');
+        pExito.textContent = `Datos enviados correctamente: 
+        Nombre: ${nombre}, Email: ${email}, Teléfono: ${telefono}`;
+        divExito.appendChild(pExito);
+
+        resultado.appendChild(divExito);
+    }
 }
